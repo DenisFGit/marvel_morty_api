@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet';
+
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect, useRef } from 'react';
 import useRickAndMorty from '../../services/RickAndMorty';
@@ -47,6 +49,13 @@ const View = ({ comic }) => {
     const { name, gender, status, species, image, location, origin } = comic;
     return (
         <div className="single__comic">
+            <Helmet>
+                <meta
+                    name="description"
+                    content={`${name} web page`}
+                />
+                <title>{name}</title>
+            </Helmet>
             <img src={image} alt="char_image" />
             <div className="single__wrapper">
                 <div className="single__name">{name}</div>

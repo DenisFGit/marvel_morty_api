@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import RandomChar from '../randomChar/randomChar';
 import CharList from '../charList/charList';
 import CharInfo from '../charInfo/charInfo';
@@ -18,6 +19,13 @@ const MainPage = () => {
 
     return (
         <>
+            <Helmet>
+                <meta
+                    name="description"
+                    content="Marvel and Rick and Morty information portal"
+                />
+                <title>Marvel/Rick and Morty information portal</title>
+            </Helmet>
             <ErrorBoundary>
                 <RandomChar />
             </ErrorBoundary>
