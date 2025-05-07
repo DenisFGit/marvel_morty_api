@@ -1,0 +1,39 @@
+.app {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        // padding: 50px 0;
+    }
+    &__title {
+        a {
+            font-weight: 700;
+            font-size: 28px;
+            color: #000;
+            text-decoration: none;
+            span {
+                color: #9f0013;
+            }
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        ul {
+            display: flex;
+            gap: 8px;
+            list-style-type: none;
+            font-weight: 700;
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 0;
+            padding-left: 0;
+            a {
+                text-decoration: none;
+                color: #000;
+                &:hover {
+                    color: #9f0013;
+                }
+            }
+        }
+    }
+}

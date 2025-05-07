@@ -1,0 +1,16 @@
+.app {
+    // width: 76%;
+    width: 1135px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    padding: 50px 0 45px 0;
+    position: relative;
+}
+
+.bg-decoration {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -174px;
+    z-index: 1;
+}

@@ -1,0 +1,36 @@
+@import './variables';
+
+.button {
+    position: relative;
+    display: block;
+    // padding: 11px 18px;
+    width: 101px;
+    min-height: 38px;
+    background: $main-color;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &_main {
+        background: $main-color;
+    }
+    &_secondary {
+        background: $grey;
+    }
+    &_long {
+        min-width: 170px;
+    }
+    &:disabled {
+        filter: grayscale(0.5);
+    }
+}
